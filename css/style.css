@@ -1,0 +1,366 @@
+/* ELEMENTARY SECTION */
+
+:root {
+    --white-color: #ffffff;
+    --white-dirty-color: #c6c6c6;
+    --coffee-color-primary: #4E342E;
+    --coffee-color-secondary: #3B2F2F;
+    --overlay-dark-color-primary: #4E342Eaa;
+    --overlay-dark-color-secondary: #3b2f2faa;  
+    --background-light-color: #eaeae2;
+    --background-dark-color: #3b2f2ff0; 
+}
+
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+/* ELEMENTARY END */
+
+/* BUTTONS SECTION */
+
+#about #about-wrapper-top .btn,
+#about #about-wrapper-bottom .btn,
+#about-who-we-are .btn,
+#about-coffee-origin-quality .btn,
+#products .btn,
+#products-full-menu .btn {
+    color: var(--white-dirty-color, white);
+    background-color: var(--coffee-color-primary, brown);
+    position: relative;
+
+    transition: transform 0.25s ease;
+}
+
+#about #about-wrapper-top .btn:hover,
+#about #about-wrapper-bottom .btn:hover,
+#about-who-we-are .btn:hover,
+#about-coffee-origin-quality .btn:hover,
+#products .btn:hover,
+#products-full-menu .btn:hover {
+    transform: translateY(-3px);
+}
+
+#about #about-wrapper-top .btn::before,
+#about #about-wrapper-bottom .btn::before,
+#about-who-we-are .btn::before,
+#about-coffee-origin-quality .btn::before,
+#products .btn::before,
+#products-full-menu .btn::before {
+    content: "";
+    border: solid 2px var(--white-dirty-color, white);
+    border-radius: 4px;
+    inset: 2px;
+    position: absolute;
+    /*transition: all 0.25s ease;*/
+}
+
+#about #about-wrapper-bottom .btn,
+#about-coffee-origin-quality .btn {
+    color: var(--coffee-color-primary, brown);
+    background-color: var(--white-dirty-color, white);
+}
+
+#about #about-wrapper-bottom .btn::before,
+#about-coffee-origin-quality .btn::before {
+    border: solid 2px var(--coffee-color-primary, brown);
+}
+
+/* BUTTONS END */
+
+/* LINKS SECTION */
+
+nav #nav-links a,
+nav #nav-mobile-menu-close-btn a,
+header #header-mobile-menu-btn a,
+header #header-nav a,
+#hero #hero-wrapper a,
+footer #footer-social-links a {
+    color: var(--white-color, white) !important;
+}
+
+/* LINKS END */
+
+/* NAV SECTION */
+
+nav {
+    background-color: var(--background-dark-color, brown);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+
+nav #nav-mobile-menu-close-btn a {
+    position: absolute;
+    top: 0.5em;
+    right: 0.25em;
+}
+
+nav #nav-mobile-menu-close-btn .fa-xmark {
+    color: var(--coffee-color-primary, brown);
+}
+
+/* NAV END */
+
+/* HEADER SECTION */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header #header-logotip,
+header #header-mobile-menu-btn,
+header #header-nav {
+    padding: 1em 1.5em;
+}
+
+header #header-logotip img {
+    width: 200px;
+}
+
+header #header-nav a {
+    margin-left: 1.5em;
+}
+
+header #header-nav a:hover {
+    color: var(--white-dirty-color, white) !important;
+}
+
+.solid-header {
+    background-color: var(--coffee-color-primary, brown);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transition: background-color 0.5s ease;
+}
+
+/* HEADER END */
+
+/* HERO SECTION */
+
+#hero {
+    background: url(../img/heroImg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#hero::before {
+    content: "";
+    background-color: var(--overlay-dark-color-secondary, #00000080);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero #hero-wrapper {
+    z-index: 1;
+}
+
+#hero #hero-wrapper img {
+    width: 350px;
+}
+
+#hero #hero-wrapper-span-01 {
+    color: var(--white-dirty-color, gray);
+}
+
+#hero #hero-wrapper-span-02 {
+    font-family: "Playfair Display", sans-serif;
+}
+
+#hero #hero-wrapper a {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+
+    animation: hero-arrow-down 1.5s infinite;
+}
+
+#hero #hero-wrapper a:hover {
+    animation-play-state: paused;
+}
+
+#hero #hero-wrapper a .fa-angle-down {
+    color: var(--coffee-color-primary, brown);
+}
+
+@keyframes hero-arrow-down {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+/* HERO END */
+
+/* INTRO SECTION */
+
+#intro {
+    background-color: var(--background-light-color, white);
+}
+
+#intro img {
+    width: 6em;
+
+    transition: transform 0.25s ease;
+}
+
+#intro img:hover {
+    transform: scale(1.1);   
+}
+
+/* INTRO END */
+
+/* ABOUT SECTION */
+
+#about .about-wrapper-top-bg,
+#about .about-wrapper-bottom-bg {
+    min-height: 680px;
+    height: 680px;
+    background: url(../img/aboutImg01.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#about .about-wrapper-bottom-bg {
+    background: url(../img/aboutImg02.jpg) no-repeat left;
+    position: relative;
+}
+
+#about-who-we-are .background {
+    min-height: 480px;
+    background: url(../img/aboutImg03.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#about-coffee-origin-quality .background {
+    min-height: 480px;
+    background: url(../img/aboutImg04.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* ABOUT END */
+
+/* PRODUCTS SECTION */
+
+#products,
+#products-full-menu {
+    background-color: var(--background-light-color, white);
+}
+
+#products img {
+    border-radius: 0.75em;
+}
+
+#products .bdr {
+    padding-bottom: 0.5em;
+    border-bottom: solid 2px gray;
+    border-radius: 0.75em;
+}
+
+#products-full-menu .background {
+    min-height: 180px;
+    background: url(../img/aboutImg03.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#products-full-menu ul {
+    list-style: none;
+}
+
+/* PRODUCTS END */
+
+/* CONTACT-INFO SECTION */
+
+#contact-info .contact-info-bg {
+    background: linear-gradient(to right, var(--overlay-dark-color-secondary), var(--overlay-dark-color-primary)), url(../img/contactInfoImg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contact-info .contact-info-right-bg {
+    background-color: var(--overlay-dark-color-secondary, #00000080);
+}
+
+/* CONTACT-INFO END */
+
+/* MAP SECTION */
+
+#map #map-wrapper {
+    height: 420px;
+}
+
+/* MAP END */
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: var(--coffee-color-primary, brown);
+}
+
+/* FOOTER END */
+
+@media screen and (max-width: 575px) {
+    #contact-info .contact-info-right-bg {
+        padding-top: 5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #about .about-wrapper-bottom-bg::before {
+        content: "";
+        background-color: var(--overlay-dark-color-secondary, #00000080);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    #about #about-wrapper-top-content,
+    #about #about-wrapper-bottom-content {
+        padding-left: 2em !important;
+        padding-right: 2em !important;
+    }
+    #about #about-wrapper-bottom-content {
+        z-index: 1;
+    }
+    footer #footer-social-links {
+        margin-top: 0.5em;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 991px) {
+    #about-who-we-are,
+    #about-coffee-origin-quality {
+        padding-bottom: 1em;
+    }
+    #about-who-we-are .content,
+    #about-coffee-origin-quality .content {
+        padding: 2em !important;
+    }
+    #products-full-menu .content {
+        padding-left: 1em !important;
+    }
+}
+
+@media (max-width: 1199px) {}
