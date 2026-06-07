@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mug of Coffee</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/e4375a8093.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/leaflet.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- NAV SECTION -->
+
+    <nav>
+        <div class="container">
+            <div id="nav-links" class="row vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <a class="h3 fw-bold text-uppercase text-decoration-none d-block py-3" href="#about">about</a>
+                    <a class="h3 fw-bold text-uppercase text-decoration-none d-block py-3" href="#products">products</a>
+                    <a class="h3 fw-bold text-uppercase text-decoration-none d-block py-3" href="#contact-info">contact</a>
+                    <a class="h3 fw-bold text-uppercase text-decoration-none d-block py-3" href="#map">find us</a>
+                </div>
+            </div>
+        </div>
+        <div id="nav-mobile-menu-close-btn">
+            <a href="#">
+                <span class="fa-stack fa-2x">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-solid fa-xmark fa-stack-1x"></i>
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- NAV END -->
+
+    <!-- HEADER SECTION -->
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div id="header-logotip" class="col-4">
+                    <img src="svg/headerLogotip.svg" alt="Logotip - Mug of Coffee">
+                </div>
+                <div id="header-mobile-menu-btn" class="col-8 d-md-none text-end">
+                    <a href="#">
+                        <i class="fa-solid fa-bars fa-3x"></i>
+                    </a>
+                </div>
+                <div id="header-nav" class="d-none d-md-block col-md-8 text-end">
+                    <a class="fw-bold text-uppercase text-decoration-none" href="#about">about</a>
+                    <a class="fw-bold text-uppercase text-decoration-none" href="#products">products</a>
+                    <a class="fw-bold text-uppercase text-decoration-none" href="#contact-info">contact</a>
+                    <a class="fw-bold text-uppercase text-decoration-none" href="#map">find us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- HERO SECTION -->
+
+    <section id="hero" class="text-light">
+        <div class="container-fluid">
+            <div class="row vh-100 justify-content-center align-items-center">
+                <div id="hero-wrapper" class="col-10 text-center">
+                    <img class="img-fluid py-1" src="svg/heroLogo.svg" alt="Logo - Mug of Coffee">
+                    <h1 class="display-1 fw-bold text-uppercase"><span id="hero-wrapper-span-01">welcome to</span> <span id="hero-wrapper-span-02">mug of coffee</span></h1>
+                    <p class="lead">Space where every sip feels like home. A cozy neighborhood café built on warmth, friendship, and the simple joy of great coffee.</p>
+                    <a href="#intro">
+                        <span class="fa-stack fa-2x">
+                            <!--<i class="fa-regular fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-down-long fa-stack-1x"></i>-->
+
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-angle-down fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO END -->
+
+    <!-- INTRO SECTION -->
+
+    <section id="intro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 py-5 text-center">
+                    <h2 class="display-2 fw-bold text-uppercase mb-5">your daily pause</h2>
+                    <p class="lead text-muted m-0">At Mug of Coffee, we believe that coffee is best enjoyed in a warm and welcoming atmosphere. Our café is designed to feel like home — a place where friends meet, conversations flow, and every guest feels like part of the neighborhood.</p>
+                </div>
+            </div>
+            <div class="row pb-5 justify-content-center">
+                <div class="col-10 col-sm-4 pb-5 text-center">
+                    <img class="img-fluid py-3" src="svg/iconIntro01.svg" alt="Aroma & Roast">
+                    <p class="h3 fw-bold text-uppercase">aroma & roast</p>
+                </div>
+                <div class="col-10 col-sm-4 pb-5 text-center">
+                    <img class="img-fluid py-3" src="svg/iconIntro02.svg" alt="Cream & Freshness">
+                    <p class="h3 fw-bold text-uppercase">cream & freshness</p>
+                </div>
+                <div class="col-10 col-sm-4 text-center">
+                    <img class="img-fluid py-3" src="svg/iconIntro03.svg" alt="Harmony & Balance">
+                    <p class="h3 fw-bold text-uppercase">harmony & balance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRO END -->
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+        <div class="container-fluid">
+            <div id="about-wrapper-top" class="row no-gutters">
+                <div id="about-wrapper-top-content" class="col-12 col-md-5 offset-md-1 ps-0 py-5 pe-5 align-self-center">
+                    <h3 class="display-3 fw-bold text-uppercase">who we are</h3>
+                    <p class="lead text-muted">We created Mug of Coffee as a small escape from the rush of everyday life — a cozy corner where quality coffee, friendly faces, and a relaxed atmosphere come together. At Mug of Coffee, furry friends are always welcome, because we believe a true neighborhood café includes every member of the family — including your pets.</p>
+                    <a href="html/about.html#about-who-we-are" class="fw-bold text-uppercase btn">find out more</a>
+                </div>
+                <div class="col-12 col-md-6 p-0 about-wrapper-top-bg">
+                </div>
+            </div>
+            <div id="about-wrapper-bottom" class="row no-gutters about-wrapper-bottom-bg">
+                <div class="d-none d-md-block col-md-6">
+                </div>
+                <div id="about-wrapper-bottom-content" class="col-12 col-md-6 text-light ps-0 py-5 pe-5 align-self-center">
+                    <h3 class="display-3 fw-bold text-uppercase">coffee origin & quality</h3>
+                    <p class="lead">Our coffee beans are carefully sourced from the lush slopes of Mount Kilimanjaro in Tanzania. Each bean is hand-picked with dedication by local farmers who nurture their plantations with generations of knowledge and care. Roasted with precision and respect for tradition, every cup carries the rich, vibrant character of high-altitude African coffee.</p>
+                    <a href="html/about.html#about-coffee-origin-quality" class="fw-bold text-uppercase btn">find out more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT END -->
+
+    <!-- PRODUCTS SECTION -->
+
+    <section id="products">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 py-5 text-center">
+                    <h2 class="display-2 fw-bold text-uppercase mb-5">refined selection</h2>
+                    <p class="lead text-muted m-0">From soil to cup, every step is guided by passion — resulting in a coffee experience that is pure, bold, and unforgettable.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-4 p-5 text-center">
+                    <img class="img-fluid pb-3" src="img/blackCake.jpg" alt="Black Cake">
+                    <h3 class="fw-bold text-uppercase my-3">black cake</h3>
+                    <p class="lead text-muted mb-3">Rich, dark, and indulgent — a perfect balance of deep cocoa flavor and smooth texture.</p>
+                    <p class="h3 bdr">4.0€</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 p-5 text-center">
+                    <img class="img-fluid pb-3" src="img/blackCoffe.jpg" alt="Black Coffee">
+                    <h3 class="fw-bold text-uppercase my-3">black coffee</h3>
+                    <p class="lead text-muted mb-3">Pure and bold, showcasing the true character and aroma of carefully selected beans.</p>
+                    <p class="h3 bdr">3.0€</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 p-5 text-center">
+                    <img class="img-fluid pb-3" src="img/espresso.jpg" alt="Espresso">
+                    <h3 class="fw-bold text-uppercase my-3">espresso</h3>
+                    <p class="lead text-muted mb-3">Intense and full-bodied, a concentrated shot of rich flavor with a smooth finish.</p>
+                    <p class="h3 bdr">2.0€</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 p-5 text-center">
+                    <img class="img-fluid pb-3" src="img/latte.jpg" alt="Latte">
+                    <h3 class="fw-bold text-uppercase my-3">latte</h3>
+                    <p class="lead text-muted mb-3">Silky milk blended with espresso, creating a smooth and perfectly balanced taste.</p>
+                    <p class="h3 bdr">3.5€</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 p-5 text-center">
+                    <img class="img-fluid pb-3" src="img/machhiato.jpg" alt="Machhiato">
+                    <h3 class="fw-bold text-uppercase my-3">machhiato</h3>
+                    <p class="lead text-muted mb-3">A bold espresso gently marked with milk, offering a refined contrast of flavors.</p>
+                    <p class="h3 bdr">3.0€</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 p-5 text-center">
+                    <img class="img-fluid pb-3" src="img/raspberryCake.jpg" alt="Raspberry Cake">
+                    <h3 class="fw-bold text-uppercase my-3">raspberry cake</h3>
+                    <p class="lead text-muted mb-3">Creamy and fruity — a light combination of smooth vanilla and fresh raspberry flavor.</p>
+                    <p class="h3 bdr">4.8€</p>
+                </div>
+                <div class="col-12 pb-5 text-center">
+                    <a href="html/products.html" class="fw-bold text-uppercase btn">view full menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS END -->
+
+    <!-- CONTACT-INFO SECTION -->
+
+    <section id="contact-info" class="text-light">
+        <div class="container-fluid">
+            <div class="row no-gutters contact-info-bg">
+                <div class="col-12 col-sm-5 offset-sm-1 p-5 contact-info-left">
+                    <h2 class="fw-bold text-uppercase pt-3">you are welcome!</h2>
+                    <p>Come on in!</p>
+                    <br>
+                    <h3 class="fw-bold text-uppercase">weekdays</h3>
+                    <p>08PM - 16:00</p>
+                    <br>
+                    <h3 class="fw-bold text-uppercase">weekends</h3>
+                    <p>12:00-02AM</p>
+                </div>
+                <div class="col-12 col-sm-6 p-5 contact-info-right-bg">
+                    <h2 class="fw-bold text-uppercase pt-3">contact:</h2>
+                    <br>
+                    <h3 class="fw-bold text-uppercase">phone</h3>
+                    <p>+4915######646</p>
+                    <br>
+                    <h3 class="fw-bold text-uppercase">mail</h3>
+                    <p>mug.of.coffee@gmail.com</p>
+                    <br>
+                    <h3 class="fw-bold text-uppercase">address</h3>
+                    <p>#### ####strasse, Roxel - Muenster</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT-INFO END -->
+
+    <!-- MAP SECTION -->
+
+    <search id="map">
+        <div id="map-wrapper">
+
+        </div>
+    </search>
+
+    <!-- MAP END -->
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="text-light">
+        <div class="container-fluid">
+            <div class="row py-3 align-items-center">
+                <div id="footer-copy-rights" class="col-12 col-md-6 text-center">
+                    <p class="m-0">Mug of Coffee | 2025 | &copy; | All rights reserved</p>
+                </div>
+                <div id="footer-social-links" class="col-12 col-md-6 text-end">
+                    <a href="#" class="ms-5"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                    <a href="#" class="mx-3"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                    <a href="#" class="me-5"><i class="fa-brands fa-square-x-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER END -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-4.0.0.slim.min.js"></script>
+    <script src="js/leaflet.js"></script>
+
+    <script src="js/solidHeader.js"></script>
+    <script src="js/mobileMenu.js"></script>
+    <script src="js/map.js"></script>
+    
+</body>
+</html>
